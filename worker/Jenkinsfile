@@ -6,7 +6,7 @@ pipeline {
   }
 
   stages{
-      stage(Build){
+      stage("build){
           steps{
               echo 'step 1 Build'
 	      dir('worker')	
