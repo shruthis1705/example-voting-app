@@ -9,7 +9,7 @@ pipeline {
       stage(Build){
           steps{
               echo 'step 1 Build'
-	      dir('worker')	#go to worker directory and then run mvn build
+	      dir('worker')	
 		sh 'mvn compile'
           }
       }
